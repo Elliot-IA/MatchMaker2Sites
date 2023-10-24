@@ -1,0 +1,73 @@
+@keyframes expand{
+    0%{transform: scale(0)}
+    100%{transform: scale(1)}
+}
+.expand{
+    animation: expand .5s ease-in-out;
+}
+
+
+@keyframes growLine1{
+    0%{width: 0px;}
+    100%{width: 50px;}
+}
+.growLine1{
+    animation: growLine1 .5s ease-in-out;
+}
+@keyframes growLine2{
+    0%{width: 0px;}
+    100%{width: 110px;}
+}
+.growLine2{
+    animation: growLine2 .5s ease-in-out;
+}
+@keyframes growLine3{
+    0%{width: 0px;}
+    100%{width: 53px;}
+}
+.growLine3{
+    animation: growLine3 .5s ease-in-out;
+}
+@keyframes growLine4{
+    0%{width: 0px;}
+    100%{width: 118ppx;}
+}
+.growLine4{
+    animation: growLine4 .5s ease-in-out;
+}
+
+
+#backdrop{
+    background: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#checkWrap{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    zoom: 8;
+}
+#responseText{
+    font-size: 10vw;
+    position: fixed;
+    bottom: 4vh;
+    text-align: center;
+    font-weight: bolder;
+}
+#ThankWrap{
+    display: none;
+}
+#checkCircle{background: white;height: 100%;width: 100%;border-radius: 100%;border: 13px solid green;}
+#checkSmallLine{background: green;height: 15px;width: 50px;margin-top: -52px;transform: rotate(44deg);margin-left: 24px;border-radius: 60px;position: relative;z-index: 2;}
+#checkBigLine{background: green;height: 15px;width: 110px;margin-top: -47px;transform: rotate(293deg);margin-left: 26px;border-radius: 60px;z-index: 2;position: relative;}
+.checkElement{}
+
+#lineBelow{background: white;height: 22px;width: 118px;margin-top: -19px;transform: rotate(293deg);margin-left: 20px;z-index: 1;border: 1px oldlace solid;border-radius: 60px;position: relative;}
+#lineBelow2{background: white;height: 22px;width: 53px;margin-top: 6px;transform: rotate(224deg);margin-left: 19px;index: 1;border: 1px oldlace solid;border-radius: 60px;position: relative;}
