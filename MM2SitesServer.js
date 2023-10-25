@@ -16,6 +16,9 @@ app.listen(PORT, function(){
     console.log("Server started on port 5555");
 });
 
-app.get("/", function(req, res){
+app.get("/builder", function(req, res){
     res.sendFile(__dirname+"/LookingForAStartup.html");        
+});
+app.get("/founder", function(req, res){
+    res.sendFile(__dirname+"/LookingForADevolper.html");
 });

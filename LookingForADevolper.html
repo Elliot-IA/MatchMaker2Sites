@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Developer Looking for Devolper</title>
+        <style>
+            body{
+                background-color: #a9eaff;
+            }
+            button{
+                zoom: 5;
+                padding: 20px;
+            }
+            form{
+                zoom: 5;
+                padding: 20px;
+                position: relative;
+            }
+            #textWrap{
+                zoom: 3;
+                margin-bottom: -50px !important;
+                margin-top:20px !important;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="path/to/your/jquery_file.js"><\/script>')</script>
+        <link rel="icon" href="" type="image/x-icon">
+        <link href="./css/_.css" rel="stylesheet">
+        <script src="./deviceOptimization/deviceOptimizer.js"></script>
+        <script src="./js/globals.js"></script>
+    </head>
+    <body>
+
+        <main>
+            <div class="px-4 py-5 my-5 text-center" id="textWrap">
+                <h1 class="display-5 fw-bold text-body-emphasis" id="lookingTxt">Looking for A Devolper?</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4" id="mainText">Hey! Are you a founder looking for team members to help you with your startup? Leave your email and we'll try to get you in touch with our campus dev community!</p>
+                </div>
+            </div>
+        </main>
+
+        <form>
+            <div style="text-align: center">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+        </form>
+
+        <div style="text-align: center"><button id="submitEmailButton" class="btn btn-primary">Submit</button></div>    
+
+        <script>
+            document.getElementById("submitEmailButton").onclick = ()=>{
+                console.log("Hey! Button Clicked!");
+
+                var new_iframe = document.createElement("iframe");
+                document.body.appendChild(new_iframe);
+                new_iframe.style.display = "none";
+                new_iframe.src="https://alertzy.app/send?accountKey=m143fegulr79ila&title=Request for Devolpers!&message="+document.getElementById("exampleInputEmail1").value+" wants to help a startup!";
+                setTimeout(()=>{new_iframe.remove()},1000);
+                $("#ThankWrap")[0].style = "display: block";
+            }
+        </script>
+        <div id="ThankWrap">
+            <div id="backdrop"></div>
+            <div id="checkWrap">
+                <div id="checkCircle" class="checkElement expand"></div>            
+                <div id="checkSmallLine" class="checkElement growLine1"></div>
+                <div id="checkBigLine" class="checkElement growLine2"></div>
+                <div id="lineBelow" class="checkElement growLine4"></div>
+                <div id="lineBelow2" class="checkElement growLine3"></div>
+            </div>
+            <div id="responseText">Thank you! We'll reach out to you with next steps!</div>
+        </div>
+
+        <form action="/" method="post" style="display: none" id="hiddenForm">
+            <input type="text" name="command" value="" id="command_hiddenInput">
+            <input type="text" name="data" value="" id="data_hiddenInput">
+        </form>
+        <script src="./js/_.js"></script>
+
+    </body>
+</html>
