@@ -55,7 +55,7 @@
     position: absolute;
     left: 47%;
     transform: translate(-50%,-50%);
-    zoom: 8;
+    zoom: 6;
 }
 input{
     text-align: center;
