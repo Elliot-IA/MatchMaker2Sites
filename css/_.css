@@ -75,8 +75,8 @@ input{
 #checkBigLine{background: green;height: 15px;width: 110px;margin-top: -47px;transform: rotate(293deg);margin-left: 26px;border-radius: 60px;z-index: 2;position: relative;}
 .checkElement{}
 
-#lineBelow{background: white;height: 22px;width: 118px;margin-top: -19px;transform: rotate(293deg);margin-left: 20px;z-index: 1;border: 1px oldlace solid;border-radius: 60px;position: relative;}
-#lineBelow2{background: white;height: 22px;width: 53px;margin-top: 6px;transform: rotate(224deg);margin-left: 19px;index: 1;border: 1px oldlace solid;border-radius: 60px;position: relative;}
+#lineBelow{background: white;height: 22px;width: 118px;margin-top: -19px;transform: rotate(293deg);margin-left: 20px;z-index: 1;border: 1px white solid;border-radius: 60px;position: relative;}
+#lineBelow2{background: white;height: 22px;width: 53px;margin-top: 6px;transform: rotate(224deg);margin-left: 19px;index: 1;border: 1px whites solid;border-radius: 60px;position: relative;}
 #lookingTxt{
     font-size: 20vw;
 }
