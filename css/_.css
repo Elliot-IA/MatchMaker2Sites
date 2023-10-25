@@ -54,6 +54,9 @@
     transform: translate(-50%,-50%);
     zoom: 8;
 }
+input{
+    text-align: center;
+}
 #responseText{
     font-size: 10vw;
     position: fixed;
