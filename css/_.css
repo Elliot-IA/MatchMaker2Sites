@@ -45,6 +45,9 @@
     height: 100%;
     position: absolute;
 }
+#mainText{
+    font-size: 50px;
+}
 #checkWrap{
     height: 100px;
     width: 100px;
