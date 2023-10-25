@@ -11,9 +11,9 @@ function c(s){console.log(s)}
 
 console.log("Server Initiated! Working Directory (for server js file):"+path.join(__dirname, "."));
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5555;
 app.listen(PORT, function(){
-    console.log("Server started on port 8080");
+    console.log("Server started on port 5555");
 });
 
 app.get("/", function(req, res){
